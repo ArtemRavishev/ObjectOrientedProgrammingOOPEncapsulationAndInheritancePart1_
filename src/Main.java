@@ -55,7 +55,7 @@ public class Main {
                 RANDOM.nextInt (100),
                 RANDOM.nextInt (100),
                 RANDOM.nextInt (100)
-        );
+          );
     }
     private static RavenclawStudent generateRavenclawStudent (String name){
         return new RavenclawStudent(name,

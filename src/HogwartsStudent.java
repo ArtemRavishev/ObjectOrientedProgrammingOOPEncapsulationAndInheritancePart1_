@@ -1,19 +1,19 @@
 public abstract class HogwartsStudent {
 
-    private final String name;
+    private final String nameAndSurname;
 
     private final int magic;
 
     private final int transgression;
 
-    public HogwartsStudent(String name, int magic, int transgression) {
-        this.name = name;
+    public HogwartsStudent(String nameAndSurname, int magic, int transgression) {
+        this.nameAndSurname = nameAndSurname;
         this.magic = magic;
         this.transgression = transgression;
     }
 
-    public String getName() {
-        return name;
+    public String getNameAndSurname() {
+        return nameAndSurname;
     }
 
 
@@ -37,11 +37,11 @@ public abstract class HogwartsStudent {
         int ability1 = ability();
         int ability2 = hogwartsStudent.ability();
         if (ability1 > ability2) {
-            System.out.println("Студент " + getName() + " лучше чем студент " + hogwartsStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Студент ww " + getNameAndSurname() + " лучше чем студент " + hogwartsStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
         } else if (ability1 < ability2) {
-            System.out.println("Студент  " + getName() + " лучше чем студент " + hogwartsStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Студент  " + getNameAndSurname() + " лучше чем студент " + hogwartsStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
         } else {
-            System.out.println("Студент " + getName() + " такой же, как студент " + hogwartsStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Студент " + getNameAndSurname() + " точно такой же, как студент " + hogwartsStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
 
         }
     }
@@ -53,6 +53,6 @@ public abstract class HogwartsStudent {
 
     @Override
     public String toString() {
-        return String.format("Студент %s; Сила магиии: %d; Сила трансгрессии: %d", name, magic, transgression);
+        return String.format("Студент %s; Сила магиии: %d; Сила трансгрессии: %d", nameAndSurname, magic, transgression);
     }
 }
