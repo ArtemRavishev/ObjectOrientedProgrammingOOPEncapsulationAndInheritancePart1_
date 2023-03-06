@@ -8,7 +8,7 @@ public class Main {
         GryffindorStudent harry = generateGryffindorStudent("Гари Поттер");
         GryffindorStudent ron = generateGryffindorStudent("Рон Уизли");
         GryffindorStudent hermione = generateGryffindorStudent("Гермиона Грейнджер");
-        SlytherinStudent draco = generateSlytherinStudent("Драко Малфой");
+        SlytherinStudent draco = generateSlytherinStudent("Драко Малфой ");
         SlytherinStudent greg = generateSlytherinStudent("Грэхэм Монтегю");
         SlytherinStudent goyle = generateSlytherinStudent("Грегори Гойл");
         HufflepuffStudent zachariah = generateHufflepuffStudent("Захария Сми");
