@@ -38,11 +38,11 @@ public class GryffindorStudent extends  HogwartsStudent {
         int ability1 = ability();
         int ability2 = gryffindorStudent.ability();
         if (ability1 > ability2) {
-            System.out.println("Грифиндорец " + getName() + " лучше чем Грифиндорец " +  gryffindorStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Грифиндорец " + getNameAndSurname() + " лучше чем Грифиндорец " +  gryffindorStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
         } else if (ability1 < ability2) {
-            System.out.println("Грифиндорец " + getName() + " лучше чем Грифиндорец " +  gryffindorStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Грифиндорец " + getNameAndSurname() + " лучше чем Грифиндорец " +  gryffindorStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
         } else {
-            System.out.println("Грифиндорец " + getName() + " такой же,как и Грифиндорец " +  gryffindorStudent.getName() + " : " + ability1 + " VS " + ability2);
+            System.out.println("Грифиндорец " + getNameAndSurname() + " такой же,как и Грифиндорец " +  gryffindorStudent.getNameAndSurname() + " : " + ability1 + " VS " + ability2);
         }
     }
     @Override
